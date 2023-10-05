@@ -76,6 +76,7 @@ Config = {
     PointingKeybindEnabled = true,
     PointingKeybind = 'B', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     PersistentEmoteAfterPointing = true, -- If true, you will play the emote you were playing previously after you stop pointing.
+    PointingEnabledInVehicle = true, -- If false, you won't be able to point when in a vehicle.
     -- If crouching should be enabled.
     CrouchEnabled = true,
     CrouchKeybindEnabled = true, -- If true, crouching will use keybinds.

@@ -122,7 +122,9 @@ end
 -- Commands & KeyMapping --
 if Config.PointingEnabled then
     RegisterCommand('pointing', function()
-        StartPointing()
+        if Config.PointingEnabledInVehicle or not IsPedInAnyVehicle(PlayerPedId(), false) then
+            StartPointing()
+        end
     end, false)
 
     if Config.PointingKeybindEnabled then
